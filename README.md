@@ -105,5 +105,7 @@ From data exploration to analysis, some of the findings include:
 ## DATA SOURCE
 The data was sourced from Kaggle platform : https://www.kaggle.com/datasets/kanchana1990/global-billionaire-wealth-to-gdp-2026.
 
+## CONCLUSION
+JupyterNotebooks is a very powerful tool especially in Data Science spectrum.
 
 
