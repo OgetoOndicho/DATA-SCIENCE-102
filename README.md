@@ -80,7 +80,24 @@ min_net_worth =('net_worth_usd_b', 'min')).reset_index()
 top_10_industry = billionaire_analysis.nlargest(10, 'total_net_worth')
 top_10_industry
 ```
-  
+### Statistical Analysis
+The third phase covered some Statistical Analyis. This was done importantly to help quantify the data findings.
+- Sample Question: Which gender has the higher average wealth-to-GDP ratio?
+```
+gender_comparison = df_1.groupby(['gender']).agg(
+ avg_wealth_to_gdp = ('wealth_gdp_ratio_pct', 'mean'))
+print(gender_comparison)
+
+# The Male Gender has a higher wealth to gdp ratio at 0.89 compared to the female gender at 0.32
+```
+
+## DATA FINDINGS AND RESULTS
+From data exploration to analysis, some of the findings include:
+ 1. The United States of America has the highest number of billionaires at 978, with a total combined networth of over 8 Trillion USD Dollars.
+ 2. Across the world, billionaires of the Male Gender have a higher averaage wealth to gdp ratio at 0.89 compared to female billionaires at 0,32.
+ 3. Billionaires aged 71 Years and form the major age bracket of most billionaires at 1078 with a total combined networth of over 6 Trillion USD Dollars.
+ 4. St. Kitts and Nevis is the country with the highest wealth variation at a score of 462.4.
+ 5. The United States of America has the highest number of Self Made Billionaires (213) in number compared to China's (100) in number.
 
 ## TOOLS UTILIZED
 - JupyterNotebooks.
@@ -89,4 +106,4 @@ top_10_industry
 The data was sourced from Kaggle platform : https://www.kaggle.com/datasets/kanchana1990/global-billionaire-wealth-to-gdp-2026.
 
 
-## DATA FINDINGS
+
